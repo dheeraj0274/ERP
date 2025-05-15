@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
   const [error, setError] = useState(null);
 
   // Configure axios defaults
-  axios.defaults.baseURL = 'http://localhost:8000/api';
+  axios.defaults.baseURL = 'https://erp-64a1.onrender.com/api';
 
   useEffect(() => {
     // Check if user is stored in localStorage
