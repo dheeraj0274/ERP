@@ -34,7 +34,7 @@ export const AuthProvider = ({ children }) => {
     try {
       setLoading(true);
       setError(null);
-      const response = await axios.post('/auth/login', {
+      const response = await axios.post('api/auth/login', {
         email,
         password,
       });
@@ -57,7 +57,7 @@ export const AuthProvider = ({ children }) => {
     try {
       setLoading(true);
       setError(null);
-      const response = await axios.post('/auth/register', userData);
+      const response = await axios.post('api/auth/register', userData);
       return response.data;
     } catch (err) {
       setError(err.response?.data?.message || 'An error occurred during registration');
