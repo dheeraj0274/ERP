@@ -11,7 +11,7 @@ import {
 } from "../controllers/studentController.js";
 import { VerifyToken, allowRoles } from "../middleware/authMiddleware.js";
 import Student from "../models/student.js";
-import { all } from "axios";
+
 
 const router = express.Router();
 
